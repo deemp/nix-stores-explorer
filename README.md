@@ -15,6 +15,8 @@ The project goal is to build a service for exploring Nix stores ([link](https://
 
 ### Functionality
 
+A user should be able to:
+
 - Register
 - Log in
 - Log out
@@ -22,11 +24,11 @@ The project goal is to build a service for exploring Nix stores ([link](https://
   - Create a store with a given name
     - A store name exists only for a user
     - A store is located in a directory ([link](https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-path-info))
+  - Get a list of existing stores
   - Remove a store with a given name
-  - Track which user a store belongs to
   - Add a package to a store
   - Remove a package from a store
-  - Get the difference of sets of paths in two stores
+  - Get the difference of sets of paths in two given stores
   - Get the difference of closures of two given packages
     - [1](https://zero-to-nix.com/concepts/closures), [2](https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-path-info), [3](https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-derivation-show)
     - Given `nixpkgs#bash` and `nixpkgs#hello`, find the paths that are dependencies of `nixpkgs#bash` (including its `out`), but aren't dependencies of `nixpkgs#hello`
@@ -41,7 +43,6 @@ This is a minimum:
 - Input field for a JSON request
 - A button to submit the request
 - A field to pretty-print the server response
-- A list of a user's stores
 
 ## Deployment
 
