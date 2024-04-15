@@ -20,7 +20,7 @@ A user should be able to:
 - Register
 - Log in
 - Log out
-- Perform tasks with Nix stores (using only `nixpkgs`):
+- Perform tasks with Nix stores (using a `nixpkgs` version installed on the server):
   - Create a store with a given name
     - A store name exists only for a user
     - A store is located in a directory ([link](https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-path-info))
