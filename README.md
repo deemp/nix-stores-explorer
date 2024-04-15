@@ -66,7 +66,9 @@ Note that performing tasks with Nix stores does not go beyond:
 
 ## Nix Flake
 
-Provide a basic [Nix flake](https://nixos.wiki/wiki/Flakes) using [flake-utils](https://github.com/numtide/flake-utils) or [flake-parts](https://flake.parts/).
+- Permanently enable flakes during development ([link](https://nixos.wiki/wiki/Flakes#Other_Distros.2C_without_Home-Manager)).
+
+- Provide a basic [Nix flake](https://nixos.wiki/wiki/Flakes) using [flake-utils](https://github.com/numtide/flake-utils) or [flake-parts](https://flake.parts/).
 
 ## Scripts
 
