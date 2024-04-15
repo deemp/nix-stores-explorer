@@ -24,6 +24,7 @@ A user should be able to:
   - Create a store with a given name
     - A store name exists only for a user
     - Use a local store ([link](https://nixos.org/manual/nix/unstable/store/types/local-store.html#local-store))
+      - In case of problems try to `nix profile install` ([link](https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-profile-install)) another `nix` version ([link](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=nix)).
     - Or, use the default store with user profiles - see `nix profile install --profile` and `nix profile remove --profile` ([link](https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-profile-install))
   - Get a list of existing stores
   - Remove a store with a given name
