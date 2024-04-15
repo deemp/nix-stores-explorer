@@ -23,7 +23,8 @@ A user should be able to:
 - Perform tasks with Nix stores (using a `nixpkgs` version installed on the server):
   - Create a store with a given name
     - A store name exists only for a user
-    - A store is located in a directory ([link](https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-path-info))
+    - Use a local store ([link](https://nixos.org/manual/nix/unstable/store/types/local-store.html#local-store))
+    - Or, use the default store with user profiles - see `nix profile install --profile` and `nix profile remove --profile` ([link](https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-profile-install))
   - Get a list of existing stores
   - Remove a store with a given name
   - Add a package to a store
