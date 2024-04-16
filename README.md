@@ -136,6 +136,11 @@ Quality characteristics source - [ISO/IEC 25010](https://iso25000.com/index.php/
 - **Stimulus:** registers with a name and a password
 - **Environment:** normal operation
 - **Artifact:** the server
-- **Response:** server stores encrypted password in the database
+- **Response:**
+  - server stores the user name and an encrypted password in the database and responds about successful registration
+  - server responds that the username is taken, suggests to log in
 - **Response measure:**
-  - The password is successfully checked using bcrypt within 1 second
+  - server
+    - within 1 second
+    - successfully retrieves the encrypted password from the database via the username
+    - successfully verifies the password supplied by the user using `bcrypt` ([link](https://gabrieleromanato.name/python-how-to-use-bcrypt-for-encrypting-passwords), [link](https://stackabuse.com/hashing-passwords-in-python-with-bcrypt))
