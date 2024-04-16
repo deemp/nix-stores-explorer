@@ -38,6 +38,12 @@ A user should be able to:
   - Get the size (in bytes) of a package closure
   - Check whether a package is in the store
 
+## Back end
+
+- Respond with `JSON` to requests for known functionality (see [Functionality](#functionality)).
+  - Example: send a `JSON` with a reason why a user could not be registered.
+- Respond with errors to requests for unknown functionality.
+
 ## Front end
 
 This is a minimum:
